@@ -4,6 +4,7 @@ import java.util.ArrayList;
 public class classRequirement extends DataItem implements TextIO,ShowDataItem
 {
 	//需求的名称，设置为private让用户不能直接访问
+	private String Name;
 	private int teacherNumber;
 	private ArrayList<Train> needTrainList = new ArrayList<Train>();
 	
@@ -14,7 +15,23 @@ public class classRequirement extends DataItem implements TextIO,ShowDataItem
 		this.needTrainList=inputNeedTrainList;
 	}
 	
-	//
+	public classRequirement(String inputName)
+	{
+		this.Name=inputName;
+	}
+	
+	//set and get Name method
+	public void setName(String inputName)
+	{
+		this.Name = inputName;
+	}
+	
+	public String getName()
+	{
+		return Name;
+	}
+	
+	//set and get TeacherNumber method
 	public void setTeacherNumber(int inputTeacherNumber)
 	{
 		this.teacherNumber = inputTeacherNumber;

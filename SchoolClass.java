@@ -15,6 +15,11 @@ public class SchoolClass extends DataItem implements TextIO,ShowDataItem
 		this.name=inputName;
 	}
 	
+	public SchoolClass(String inputName)
+	{
+		this.name=inputName;
+	}
+	
 	//修改名称，用于让变量不能被用户直接调用
 	public void setName (String inputName)
 	{

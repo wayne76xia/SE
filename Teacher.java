@@ -14,6 +14,11 @@ public class Teacher extends DataItem implements TextIO,ShowDataItem
 		this.trainList = inputTrainList;
 	}
 	
+	public  Teacher (String inputName)
+	{
+		this.name = inputName;
+	}
+	
 	//get the trains list
 	public ArrayList<Train>  getList()
 	{
