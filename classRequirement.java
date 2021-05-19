@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.ArrayList;
 
-public class classRequirement 
+public class classRequirement extends DataItem implements TextIO,ShowDataItem
 {
 	//需求的名称，设置为private让用户不能直接访问
 	private int teacherNumber;
@@ -63,6 +63,21 @@ public class classRequirement
 	}
 	
 	
+	
+	
 	//here need to add some IO methods
-
+	@Override
+	public void read() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void write() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
 }

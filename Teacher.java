@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.ArrayList;
 
-public class Teacher 
+public class Teacher extends DataItem implements TextIO,ShowDataItem
 {
 	
 	//variables: name and trainList
@@ -58,8 +58,20 @@ public class Teacher
 	*/
 	
 	
+	
 	//here need to add some IO methods
 	
+	@Override
+	public void read() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void write() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	

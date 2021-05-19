@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.ArrayList;
 
-public class SchoolClass 
+public class SchoolClass extends DataItem implements TextIO,ShowDataItem
 {
 	private String name;
 	
@@ -39,6 +39,7 @@ public class SchoolClass
 		schoolClassRequirementList.remove(inputSchoolClassRequirementList);
 	}
 	
+	
 	//打印课程，可以写成接口
 	public	void	print(PrintStream ps)
 	{
@@ -53,5 +54,16 @@ public class SchoolClass
 	
 	
 	//here need to add some IO methods
-
+	@Override
+	public void read() 
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public void write() {
+		// TODO Auto-generated method stub
+		
+	}
+	
 }
