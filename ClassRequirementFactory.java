@@ -1,9 +1,9 @@
-public class ClassRequirementFactory implements DataFactory
+public abstract class ClassRequirementFactory implements DataFactory
 {
 
-		public classRequirement makeDataitem(String inputName)
-		{
-			return new classRequirement(inputName);
-		}
+//		public classRequirement makeDataitem(String inputName)
+//		{
+//			return new classRequirement(inputName);
+//		}
 }
 
